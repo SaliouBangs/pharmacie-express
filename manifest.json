@@ -1,0 +1,33 @@
+.footer{
+background:#2e7d32;
+color:white;
+margin-top:40px;
+padding:30px 20px;
+}
+
+.footer-container{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+}
+
+.footer-section{
+max-width:250px;
+}
+
+.footer-section a{
+display:block;
+color:white;
+text-decoration:none;
+margin-top:5px;
+}
+
+.footer-section a:hover{
+text-decoration:underline;
+}
+
+.copyright{
+text-align:center;
+margin-top:20px;
+font-size:14px;
+}

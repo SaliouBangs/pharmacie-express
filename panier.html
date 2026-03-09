@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Panier</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+
+<a href="index.html">Accueil</a>
+<a href="produits.html">Produits</a>
+<a href="panier.html">Panier</a>
+<a href="commande.html">Commande</a>
+<a href="ordonnance.html">Ordonnances</a>
+<a href="contact.html">Contact</a>
+
+
+</nav>
+
+
+<section class="panier-section">
+
+<div class="panier-header">
+
+<h1>Votre panier</h1>
+
+<button onclick="viderPanier()" class="btn-vider">
+Vider le panier
+</button>
+
+</div>
+
+<div id="panier"></div>
+
+<div class="panier-total">
+
+<h2 id="total"></h2>
+
+<a href="commande.html" class="btn-commande">
+Passer la commande
+</a>
+
+</div>
+
+</section>
+
+<script src="panier.js"></script>
+
+</body>
+
+</html>
