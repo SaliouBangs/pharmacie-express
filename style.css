@@ -505,3 +505,27 @@ padding:20px;
 border-radius:8px;
 box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
+
+.panier-flottant{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#ff9800;
+color:white;
+font-size:24px;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+box-shadow:0 4px 8px rgba(0,0,0,0.3);
+z-index:1000;
+transition:0.3s;
+}
+
+.panier-flottant:hover{
+background:#e68900;
+transform:scale(1.1);
+}
