@@ -218,15 +218,25 @@ menu.style.display = "flex";
 }
 
 function afficherCompteurPanier(){
+
 let panier = JSON.parse(localStorage.getItem("panier")) || [];
+
 let total = 0;
+
 panier.forEach(p => {
-total += p.quantite;
+
+total += p.quantite ? p.quantite : 1;
+
 });
+
 let compteur = document.getElementById("compteur-panier");
+
 if(compteur){
+
 compteur.innerText = total;
+
 }
+
 }
 
 document.addEventListener("DOMContentLoaded", afficherCompteurPanier);
