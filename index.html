@@ -2,162 +2,125 @@
 <html lang="fr">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Pharmacie Express</title>
-
 <link rel="stylesheet" href="style.css">
 <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
-
 <nav>
-
-<div class="nav-container">
-
-<h2 class="logo">Pharmacie Express</h2>
-
-<div class="menu-toggle" onclick="toggleMenu()">
-☰
-</div>
-
-<div class="nav-links" id="nav-links">
-
-<a href="index.html">Accueil</a>
-<a href="produits.html">Produits</a>
-<a href="panier.html">🛒 Panier </a>
-<a href="commande.html">Ordonnance</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
-</div>
-
+  <div class="nav-container">
+    <h2 class="logo">Pharmacie Express</h2>
+    <div class="menu-toggle" onclick="toggleMenu()">☰
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="panier.html">Panier </a>
+      <a href="commande.html">Ordonnance</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
 </nav>
-
 <section class="hero">
-
-<h1>Pharmacie Express Fantagbè Diaby</h1>
-
-<p>Commandez vos médicaments et recevez-les rapidement à domicile.</p>
-
-<a href="produits.html" class="btn">Commander maintenant</a>
-
+  <h1>Pharmacie Express Fantagbè Diaby</h1>
+  <p>Commandez vos médicaments et recevez-les rapidement à domicile.</p>
+  <a href="produits.html" class="btn">Commander maintenant</a>
 </section>
-
 <section class="services">
-
 <h2>Nos services</h2>
-
 <div class="cards">
-
 <div class="card">
 <h3>Recherche de médicaments</h3>
 <p>Trouvez facilement vos médicaments.</p>
 </div>
-
+  
 <div class="card">
 <h3>Ordonnance</h3>
 <p>Envoyez votre ordonnance directement.</p>
 </div>
-
+  
 <div class="card">
 <h3>Livraison rapide</h3>
 <p>Nous livrons vos médicaments rapidement.</p>
 </div>
-
 </div>
 
 </section>
-
 <section class="process">
-
 <h2>Comment ça marche ?</h2>
-
 <ol>
-
 <li>Recherchez votre médicament</li>
 <li>Ajoutez au panier</li>
 <li>Envoyez la commande</li>
 <li>Nous livrons chez vous</li>
-
 </ol>
-
 </section>
-
+  
 <script>
-
 if("serviceWorker" in navigator){
-
 navigator.serviceWorker.register("service-worker.js");
-
 }
 
 </script>
-
-</body>
-
-<section class="pharmacies">
-
+  <section class="pharmacies">
 <h2>Nos pharmacies partenaires</h2>
-
+  
 <div class="pharmacies-container">
-
-<div class="pharmacie">
-<img src="nouni.jpg">
-<h3>Pharmacie Nouni</h3>
-<p>Conakry</p>
-</div>
-
-<div class="pharmacie">
-<img src="manquepas.jpg">
-<h3>Pharmacie Manquepas</h3>
-<p>Conakry</p>
-</div>
-
-<div class="pharmacie">
-<img src="coronthie.png">
-<h3>Pharmacie Nouvelle Coronthie</h3>
-<p>Conakry</p>
-</div>
-
+  <div class="pharmacie">
+  <img src="nouni.jpg">
+  <h3>Pharmacie Nouni</h3>
+  <p>Conakry</p>
+  </div>
+  
+  <div class="pharmacie">
+  <img src="manquepas.jpg">
+  <h3>Pharmacie Manquepas</h3>
+  <p>Conakry</p>
+  </div>
+  
+  <div class="pharmacie">
+  <img src="coronthie.png">
+  <h3>Pharmacie Nouvelle Coronthie</h3>
+  <p>Conakry</p>
+  </div>
 </div>
 
 </section>
-
+  
 <footer class="footer">
-
-<div class="footer-container">
-
-<div class="footer-section">
-<h3>Pharmacie Express</h3>
-<p>Service de commande et livraison de médicaments à domicile.</p>
-</div>
-
-<div class="footer-section">
-<h3>Liens rapides</h3>
-<a href="index.html">Accueil</a>
-<a href="produits.html">Produits</a>
-<a href="panier.html">Panier</a>
-<a href="commande.html">Commander</a>
-</div>
-
-<div class="footer-section">
-<h3>Contact</h3>
-<p>Téléphone : +224 620 41 31 42</p>
-<p>Email : pharmacie@email.com</p>
-<p>Conakry, Guinée</p>
-</div>
-
-</div>
+  <div class="footer-container">
+    
+    <div class="footer-section">
+    <h3>Pharmacie Express</h3>
+    <p>Service de commande et livraison de médicaments à domicile.</p>
+    </div>
+    
+    <div class="footer-section">
+    <h3>Liens rapides</h3>
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="panier.html">Panier</a>
+    <a href="commande.html">Commander</a>
+    </div>
+    
+    <div class="footer-section">
+    <h3>Contact</h3>
+    <p>Téléphone : +224 620 41 31 42</p>
+    <p>Email : pharmacie@email.com</p>
+    <p>Conakry, Guinée</p>
+    </div>
+  
+  </div>
 
 <p class="copyright">
-© 2026 Pharmacie Express - Tous droits réservés
+  © 2026 Pharmacie Express - Tous droits réservés
 </p>
 
 </footer>
-
+  
+</body>
+  
 </html>
