@@ -252,3 +252,15 @@ panier.push({id, nom, prix, quantite:1});
 localStorage.setItem("panier", JSON.stringify(panier));
 afficherCompteurPanier();
 }
+
+function activerMenu(){
+let liens = document.querySelectorAll("nav a");
+let page = window.location.pathname.split("/").pop();
+liens.forEach(lien => {
+let href = lien.getAttribute("href");
+if(href === page){
+lien.classList.add("active");
+}
+});
+}
+document.addEventListener("DOMContentLoaded", activerMenu);
