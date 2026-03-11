@@ -534,3 +534,10 @@ font-size:14px;
 padding:4px 7px;
 border-radius:50%;
 }
+
+nav a.active{
+background:white;
+color:#2e7d32;
+border-radius:5px;
+padding:6px 10px;
+}
