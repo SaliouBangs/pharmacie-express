@@ -218,21 +218,27 @@ menu.style.display = "flex";
 }
 
 function afficherCompteurPanier(){
-
 let panier = JSON.parse(localStorage.getItem("panier")) || [];
-
 let total = 0;
-
 panier.forEach(p => {
 total += p.quantite;
 });
-
 let compteur = document.getElementById("compteur-panier");
-
 if(compteur){
 compteur.innerText = total;
 }
-
 }
 
 document.addEventListener("DOMContentLoaded", afficherCompteurPanier);
+function ajouterPanier(id, nom, prix){
+let panier = JSON.parse(localStorage.getItem("panier")) || [];
+let produit = panier.find(p => p.id === id);
+if(produit){
+produit.quantite += 1;
+}
+else{
+panier.push({id, nom, prix, quantite:1});
+}
+localStorage.setItem("panier", JSON.stringify(panier));
+afficherCompteurPanier();
+}
