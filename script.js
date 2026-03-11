@@ -26,7 +26,7 @@ categorie:"Antibiotique"
 id:"MED003",
 nom:"Vitamine C",
 prix:10000,
-image:"Vitamine.jpg",
+image:"vitamine.jpg",
 dosage:"1000 mg",
 usage:"Renforce l'immunité",
 categorie:"Vitamine"
