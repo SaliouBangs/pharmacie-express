@@ -541,3 +541,18 @@ color:#2e7d32;
 border-radius:5px;
 padding:6px 10px;
 }
+
+.breadcrumb{
+margin:15px 30px;
+font-size:14px;
+color:#666;
+}
+
+.breadcrumb a{
+color:#2e7d32;
+text-decoration:none;
+}
+
+.breadcrumb a:hover{
+text-decoration:underline;
+}
