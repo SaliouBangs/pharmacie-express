@@ -16,40 +16,32 @@
 		<a href="contact.html">Contact</a>
 	</nav>
 
-<section class="commande-section">
+	<section class="commande-section">
+		<h1>Finaliser la commande</h1>
+		<div class="commande-container">
+		<form id="commandeForm" class="form-commande">
 
-<h1>Finaliser la commande</h1>
+		<label>Nom</label>
+		<input type="text" id="nom" required>
+		
+		<label>Téléphone</label>
+		<input type="text" id="telephone" required>
+		
+		<label>Adresse de livraison</label>
+		<input type="text" id="adresse" required>
+		
+		<label>Ordonnance (optionnel)</label>
+		<input type="file" id="ordonnance">
 
-<div class="commande-container">
-
-<form id="commandeForm" class="form-commande">
-
-<label>Nom</label>
-<input type="text" id="nom" required>
-
-<label>Téléphone</label>
-<input type="text" id="telephone" required>
-
-<label>Adresse de livraison</label>
-<input type="text" id="adresse" required>
-
-<label>Ordonnance (optionnel)</label>
-<input type="file" id="ordonnance">
-
-<button type="button" onclick="localiser()" class="btn-position">
-Partager ma position
-</button>
-
-<p id="position"></p>
-
-<div id="carte"></div>
-
-<button type="submit" class="btn-commande">
-Envoyer la commande
-</button>
-
-</form>
-
+		<button type="button" onclick="localiser()" class="btn-position">
+			Partager ma position
+		</button>
+		<p id="position"></p>
+		<div id="carte"></div>
+		<button type="submit" class="btn-commande">
+		Envoyer la commande
+		</button>
+		</form>
 
 <div class="commande-resume">
 
